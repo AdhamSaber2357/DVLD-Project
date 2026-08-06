@@ -37,5 +37,10 @@ namespace DVLD
         {
             this.Close();
         }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

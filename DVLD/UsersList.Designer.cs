@@ -52,6 +52,7 @@
             this.btnAddUser.Size = new System.Drawing.Size(89, 51);
             this.btnAddUser.TabIndex = 19;
             this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // txtFilterUsers
             // 
