@@ -20,3 +20,4 @@ C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.csproj.CoreCompileInp
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.csproj.Up2Date
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.exe
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.pdb
+C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.AddUser.resources

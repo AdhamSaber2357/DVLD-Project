@@ -40,7 +40,8 @@ namespace DVLD
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-
+            AddUser u = new AddUser();
+            u.ShowDialog();
         }
     }
 }

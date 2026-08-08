@@ -28,24 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlPersonDetails1 = new DVLD.ctrlPersonDetails();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.ctrlPersonDetails1 = new DVLD.ctrlPersonDetails();
             this.SuspendLayout();
-            // 
-            // ctrlPersonDetails1
-            // 
-            this.ctrlPersonDetails1.Location = new System.Drawing.Point(21, 83);
-            this.ctrlPersonDetails1.Name = "ctrlPersonDetails1";
-            this.ctrlPersonDetails1.Size = new System.Drawing.Size(881, 378);
-            this.ctrlPersonDetails1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 40);
+            this.label1.Location = new System.Drawing.Point(6, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 29);
             this.label1.TabIndex = 1;
@@ -53,7 +46,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(199, 47);
+            this.txtSearch.Location = new System.Drawing.Point(166, 24);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(195, 22);
             this.txtSearch.TabIndex = 2;
@@ -62,13 +55,21 @@
             // 
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(421, 43);
+            this.btnSearch.Location = new System.Drawing.Point(388, 20);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(109, 34);
             this.btnSearch.TabIndex = 0;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // ctrlPersonDetails1
+            // 
+            this.ctrlPersonDetails1.Location = new System.Drawing.Point(11, 52);
+            this.ctrlPersonDetails1.Name = "ctrlPersonDetails1";
+            this.ctrlPersonDetails1.Size = new System.Drawing.Size(836, 340);
+            this.ctrlPersonDetails1.TabIndex = 0;
+            this.ctrlPersonDetails1.Load += new System.EventHandler(this.ctrlPersonDetails1_Load);
             // 
             // ctrlFindPerson
             // 
@@ -79,7 +80,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ctrlPersonDetails1);
             this.Name = "ctrlFindPerson";
-            this.Size = new System.Drawing.Size(942, 500);
+            this.Size = new System.Drawing.Size(868, 402);
             this.ResumeLayout(false);
             this.PerformLayout();
 

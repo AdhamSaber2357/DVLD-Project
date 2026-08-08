@@ -16,10 +16,18 @@ namespace DVLD
         {
             InitializeComponent();
         }
-
+        public int PersonID
+        {
+            get { return ctrlPersonDetails1.PersonID; }
+        }
         private void btnSearch_Click(object sender, EventArgs e)
         {
             ctrlPersonDetails1.LoadPersonInfo(int.Parse(txtSearch.Text));
+        }
+
+        private void ctrlPersonDetails1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
