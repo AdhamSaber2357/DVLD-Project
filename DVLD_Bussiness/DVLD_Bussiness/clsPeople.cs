@@ -12,7 +12,7 @@ namespace DVLD_Bussiness
     {
         public enum _enMode { Add, Update };
         public _enMode Mode;
-        public int PersonID { get; set; }
+        public int? PersonID { get; set; }
         public string NationalNo { get; set; }
         public string FirstName { get; set; }
         public string SecondName { get; set; }
@@ -45,7 +45,7 @@ namespace DVLD_Bussiness
             Mode = _enMode.Add;
         }
 
-        private clsPeople(int PersonID, string NationalNo
+        private clsPeople(int? PersonID, string NationalNo
             , string FirstName, string SecondName, string ThirdName, string LastName, int Gender
             , string Phone, string Email, string Address, int NationalityID, string ImagePath, DateTime DateOfBirth)
         {
@@ -85,7 +85,7 @@ namespace DVLD_Bussiness
             return clsDataPeople.UpdatePerson(this.PersonID, this.NationalNo, this.FirstName, this.SecondName, this.ThirdName, this.LastName
                 , this.Gender, this.Address, this.Phone, this.Email, this.NationalityID, this.DateOfBirth, this.ImagePath);
         }
-        public static clsPeople Find(int id)
+        public static clsPeople Find(int? id)
         {
             string nationalno = "", firstname = "", lastname = "", secondnane = "", thirdname = "",
                 phone = "", email = "", address = "", imagepath = "";

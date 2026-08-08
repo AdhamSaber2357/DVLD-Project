@@ -18,9 +18,9 @@ namespace DVLD
     {
         private clsPeople _Person;
 
-        private int _PersonID = -1;
+        private int? _PersonID = -1;
 
-        public int PersonID
+        public int? PersonID
         {
             get { return _PersonID; }
         }
@@ -79,11 +79,11 @@ namespace DVLD
                     pictureBox1.BackgroundImage = Resources.Female_512;
             }
 
-
+            
 
         }
 
-        public void LoadPersonInfo(int PersonID)
+        public void LoadPersonInfo(int? PersonID)
         {
             _Person = clsPeople.Find(PersonID);
             if (_Person == null)

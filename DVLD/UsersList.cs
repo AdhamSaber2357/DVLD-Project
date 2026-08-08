@@ -40,8 +40,17 @@ namespace DVLD
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            AddUser u = new AddUser();
+            AddUser u = new AddUser(null);
             u.ShowDialog();
+            _Refresh();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int? x = dgvUserList.CurrentRow.Cells[0].Value as int?;
+            AddUser u = new AddUser(x);
+            u.ShowDialog();
+            _Refresh();
         }
     }
 }

@@ -13,9 +13,13 @@ namespace DVLD
 {
     public partial class AddUser : Form
     {
-        public AddUser()
+        private int? _UserID;
+        private clsUser _User;
+
+        public AddUser(int? userid)
         {
             InitializeComponent();
+            _UserID = userid;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -90,6 +94,64 @@ namespace DVLD
             {
                 e.Cancel = false;
                 errorProvider1.SetError(txtConfirmPassword, "");
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (_UserID == null)
+            {
+                _User = new clsUser();
+                _User.PersonID = ctrlFindPerson1.PersonID;
+                _User.UserName = txtUserName.Text;
+                _User.Password = txtPassword.Text;
+                if (chkIsActive.Checked)
+                    _User.IsActive = true;
+                else
+                    _User.IsActive = false;
+
+                if (_User.Save())
+                    MessageBox.Show("User Added Successfully!");
+
+                lbUserID.Text = _User.UserID.ToString();
+                lbAddorUpdate.Text = "Update User";
+            }
+
+            else
+            {
+                _User.UserName = txtUserName.Text;
+                _User.Password= txtPassword.Text;
+                _User.IsActive = chkIsActive.Checked;
+                if (_User.Save())
+                    MessageBox.Show("User Updated Successfully!");
+            }
+
+
+        }
+        void LoadUserData()
+        {
+           _User = clsUser.Find(_UserID);
+            if(_User != null)
+            {
+                ctrlFindPerson1.PersonDatailsAccess.LoadPersonInfo(_User.PersonID);
+
+                txtUserName.Text = _User.UserName;
+                txtPassword.Text = _User.Password;
+                txtConfirmPassword.Text= _User.Password;
+                lbUserID.Text = _User.UserID.ToString();
+                chkIsActive.Checked  = Convert.ToBoolean(_User.IsActive);
+                ctrlFindPerson1.SearchGroupBoxAccess.Enabled = false;
+                btnNext.Enabled = false;
+                btnSave.Enabled = true;
+            }
+        }
+
+        private void AddUser_Load(object sender, EventArgs e)
+        {
+            if(_UserID !=null)
+            {
+                lbAddorUpdate.Text = "Upadte User";
+                LoadUserData();
             }
         }
     }

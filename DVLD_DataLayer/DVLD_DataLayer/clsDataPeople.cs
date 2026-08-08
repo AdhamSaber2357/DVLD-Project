@@ -148,7 +148,7 @@ namespace DVLD_DataLayer
 
         }
 
-        public static bool UpdatePerson(int personid,string nationalnumber
+        public static bool UpdatePerson(int? personid,string nationalnumber
             , string firstname, string secondname, string thirdname, string lastname
             , int gender, string address, string phone, string email, int nationality, DateTime birthofdate, string ImagePath)
         {
@@ -195,7 +195,7 @@ namespace DVLD_DataLayer
 
         }
 
-        public static  bool Find( int  personid,ref string nationalnumber
+        public static  bool Find( int?  personid,ref string nationalnumber
             ,ref string firstname,ref string secondname,ref string thirdname,ref string lastname
             , ref int  gender,ref string address,ref string phone,ref string email,ref int nationality,ref DateTime birthofdate,ref string ImagePath)
         {

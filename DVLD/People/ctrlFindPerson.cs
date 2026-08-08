@@ -16,9 +16,17 @@ namespace DVLD
         {
             InitializeComponent();
         }
-        public int PersonID
+        public int? PersonID
         {
             get { return ctrlPersonDetails1.PersonID; }
+        }
+        public ctrlPersonDetails PersonDatailsAccess
+        {
+            get { return ctrlPersonDetails1; }
+        }
+        public GroupBox SearchGroupBoxAccess
+        {
+            get { return gbSearch; }
         }
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -26,6 +34,11 @@ namespace DVLD
         }
 
         private void ctrlPersonDetails1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ctrlFindPerson_Load(object sender, EventArgs e)
         {
 
         }

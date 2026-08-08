@@ -32,6 +32,8 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.ctrlPersonDetails1 = new DVLD.ctrlPersonDetails();
+            this.gbSearch = new System.Windows.Forms.GroupBox();
+            this.gbSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +48,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(166, 24);
+            this.txtSearch.Location = new System.Drawing.Point(17, 21);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(195, 22);
             this.txtSearch.TabIndex = 2;
@@ -55,9 +57,9 @@
             // 
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(388, 20);
+            this.btnSearch.Location = new System.Drawing.Point(239, 14);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(109, 34);
+            this.btnSearch.Size = new System.Drawing.Size(95, 34);
             this.btnSearch.TabIndex = 0;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -71,16 +73,29 @@
             this.ctrlPersonDetails1.TabIndex = 0;
             this.ctrlPersonDetails1.Load += new System.EventHandler(this.ctrlPersonDetails1_Load);
             // 
+            // gbSearch
+            // 
+            this.gbSearch.Controls.Add(this.txtSearch);
+            this.gbSearch.Controls.Add(this.btnSearch);
+            this.gbSearch.Location = new System.Drawing.Point(190, 17);
+            this.gbSearch.Name = "gbSearch";
+            this.gbSearch.Size = new System.Drawing.Size(376, 54);
+            this.gbSearch.TabIndex = 3;
+            this.gbSearch.TabStop = false;
+            this.gbSearch.Text = "Search";
+            // 
             // ctrlFindPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.gbSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ctrlPersonDetails1);
             this.Name = "ctrlFindPerson";
             this.Size = new System.Drawing.Size(868, 402);
+            this.Load += new System.EventHandler(this.ctrlFindPerson_Load);
+            this.gbSearch.ResumeLayout(false);
+            this.gbSearch.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,5 +107,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.GroupBox gbSearch;
     }
 }
