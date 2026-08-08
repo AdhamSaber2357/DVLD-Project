@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="../DVLD_Bussiness/DVLD_Bussiness/DVLD_Bussiness.csproj" Id="b58420c1-f730-454c-959f-4550e14e58a2" />
-  <Project Path="../DVLD_DataLayer/DVLD_DataLayer/DVLD_DataLayer.csproj" Id="a5ffb32c-990f-470f-b159-29fd6555ec6f" />
   <Project Path="DVLD/DVLD.csproj" Id="c9e636ac-c051-4c69-9521-936de71111a7" />
+  <Project Path="DVLD_Bussiness/DVLD_Bussiness/DVLD_Bussiness.csproj" Id="b58420c1-f730-454c-959f-4550e14e58a2" />
+  <Project Path="DVLD_DataLayer/DVLD_DataLayer/DVLD_DataLayer.csproj" Id="a5ffb32c-990f-470f-b159-29fd6555ec6f" />
 </Solution>
