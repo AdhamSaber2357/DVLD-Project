@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|c:\\users\\adham saber\\source\\repos\\dvld\\dvld\\adduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\adduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\adduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|c:\\users\\adham saber\\source\\repos\\dvld\\dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -49,7 +49,7 @@
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|c:\\users\\adham saber\\source\\repos\\dvld\\dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -123,8 +123,7 @@
               "RelativeToolTip": "DVLD\\AddUser.Designer.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAhwBgBAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-08T00:01:04.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-08T00:01:04.606Z"
             },
             {
               "$type": "Document",
@@ -148,8 +147,7 @@
               "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\AddUser.cs [Design]",
               "RelativeToolTip": "DVLD\\AddUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T22:34:44.898Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-07T22:34:44.898Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "DVLD\\People\\ctrlFindPerson.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T23:21:42.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-24T23:21:42.474Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "DVLD\\People\\ctrlPersonDetails.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAWwDgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T01:06:41.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-24T01:06:41.573Z"
             },
             {
               "$type": "Document",
@@ -187,8 +183,7 @@
               "RelativeToolTip": "..\\DVLD_Bussiness\\DVLD_Bussiness\\clsUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T05:30:29.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-31T05:30:29.35Z"
             },
             {
               "$type": "Document",
@@ -199,8 +194,7 @@
               "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\AddUpdatePeople.cs [Design]",
               "RelativeToolTip": "DVLD\\People\\AddUpdatePeople.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T14:42:28.422Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-22T14:42:28.422Z"
             },
             {
               "$type": "Document",
@@ -212,8 +206,7 @@
               "RelativeToolTip": "DVLD\\People\\AddUpdatePeople.cs",
               "ViewState": "AgIAALwAAAAAAAAAAAAuwMkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-14T00:35:43.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-14T00:35:43.052Z"
             },
             {
               "$type": "Document",
@@ -225,8 +218,7 @@
               "RelativeToolTip": "..\\DVLD_DataLayer\\DVLD_DataLayer\\clsDataUser.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAYwFkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-31T05:18:18.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-31T05:18:18.66Z"
             },
             {
               "$type": "Document",
@@ -237,8 +229,7 @@
               "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\ctrlFindPerson.cs [Design]",
               "RelativeToolTip": "DVLD\\People\\ctrlFindPerson.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T23:18:12.3Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-24T23:18:12.3Z"
             },
             {
               "$type": "Document",
@@ -249,8 +240,7 @@
               "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\ctrlPersonDetails.cs [Design]",
               "RelativeToolTip": "DVLD\\People\\ctrlPersonDetails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T00:57:05.359Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-24T00:57:05.359Z"
             },
             {
               "$type": "Document",
@@ -286,8 +276,7 @@
               "RelativeToolTip": "DVLD\\UsersList.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAmwCsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-01T15:42:31.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-01T15:42:31.75Z"
             },
             {
               "$type": "Document",
@@ -310,8 +299,7 @@
               "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs [Design]",
               "RelativeToolTip": "DVLD\\UsersList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-01T15:40:40.767Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-01T15:40:40.767Z"
             },
             {
               "$type": "Document",
