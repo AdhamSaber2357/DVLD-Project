@@ -24,6 +24,10 @@ namespace DVLD
         {
             get { return ctrlPersonDetails1; }
         }
+        public TextBox TextBoxSearchAccess
+        {
+            get { return txtSearch; }
+        }
         public GroupBox SearchGroupBoxAccess
         {
             get { return gbSearch; }

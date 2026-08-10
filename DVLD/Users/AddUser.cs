@@ -152,7 +152,22 @@ namespace DVLD
             {
                 lbAddorUpdate.Text = "Upadte User";
                 LoadUserData();
+                btnAddPerson.Visible = false;
             }
+        }
+
+        private void btnAddPerson_Click(object sender, EventArgs e)
+        {
+            AddUpdatePeople frm = new AddUpdatePeople(-1);
+            frm.GetPersonID = GetNewPerson;
+            frm.ShowDialog();
+
+        }
+
+        void GetNewPerson(int? PersonID)
+        {
+            ctrlFindPerson1.PersonDatailsAccess.LoadPersonInfo(PersonID);
+            ctrlFindPerson1.TextBoxSearchAccess.Text = PersonID.ToString();
         }
     }
     

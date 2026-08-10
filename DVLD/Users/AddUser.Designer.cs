@@ -33,7 +33,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpPersonInfo = new System.Windows.Forms.TabPage();
             this.btnNext = new System.Windows.Forms.Button();
-            this.ctrlFindPerson1 = new DVLD.ctrlFindPerson();
             this.tbLoginInfo = new System.Windows.Forms.TabPage();
             this.chkIsActive = new System.Windows.Forms.CheckBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -47,6 +46,8 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ctrlFindPerson1 = new DVLD.ctrlFindPerson();
+            this.btnAddPerson = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tpPersonInfo.SuspendLayout();
             this.tbLoginInfo.SuspendLayout();
@@ -76,6 +77,7 @@
             // 
             // tpPersonInfo
             // 
+            this.tpPersonInfo.Controls.Add(this.btnAddPerson);
             this.tpPersonInfo.Controls.Add(this.btnNext);
             this.tpPersonInfo.Controls.Add(this.ctrlFindPerson1);
             this.tpPersonInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -98,14 +100,6 @@
             this.btnNext.Text = " Next =>";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // ctrlFindPerson1
-            // 
-            this.ctrlFindPerson1.Location = new System.Drawing.Point(-4, 0);
-            this.ctrlFindPerson1.Margin = new System.Windows.Forms.Padding(4);
-            this.ctrlFindPerson1.Name = "ctrlFindPerson1";
-            this.ctrlFindPerson1.Size = new System.Drawing.Size(1064, 431);
-            this.ctrlFindPerson1.TabIndex = 0;
             // 
             // tbLoginInfo
             // 
@@ -248,6 +242,27 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // ctrlFindPerson1
+            // 
+            this.ctrlFindPerson1.Location = new System.Drawing.Point(-4, 0);
+            this.ctrlFindPerson1.Margin = new System.Windows.Forms.Padding(4);
+            this.ctrlFindPerson1.Name = "ctrlFindPerson1";
+            this.ctrlFindPerson1.Size = new System.Drawing.Size(1064, 431);
+            this.ctrlFindPerson1.TabIndex = 0;
+            // 
+            // btnAddPerson
+            // 
+            this.btnAddPerson.BackColor = System.Drawing.Color.Black;
+            this.btnAddPerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPerson.ForeColor = System.Drawing.Color.Gold;
+            this.btnAddPerson.Location = new System.Drawing.Point(733, 37);
+            this.btnAddPerson.Name = "btnAddPerson";
+            this.btnAddPerson.Size = new System.Drawing.Size(177, 42);
+            this.btnAddPerson.TabIndex = 4;
+            this.btnAddPerson.Text = "Add New Person";
+            this.btnAddPerson.UseVisualStyleBackColor = false;
+            this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,5 +305,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtConfirmPassword;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button btnAddPerson;
     }
 }

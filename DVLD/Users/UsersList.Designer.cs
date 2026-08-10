@@ -30,36 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersList));
-            this.btnAddUser = new System.Windows.Forms.Button();
             this.txtFilterUsers = new System.Windows.Forms.TextBox();
             this.cbFilterUsers = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lbUsersNumber = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvUserList = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnAddUser = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cbForIsActive = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserList)).BeginInit();
             this.contextMenuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAddUser
-            // 
-            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
-            this.btnAddUser.Location = new System.Drawing.Point(699, 151);
-            this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(89, 51);
-            this.btnAddUser.TabIndex = 19;
-            this.btnAddUser.UseVisualStyleBackColor = true;
-            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // txtFilterUsers
             // 
@@ -68,21 +58,24 @@
             this.txtFilterUsers.Name = "txtFilterUsers";
             this.txtFilterUsers.Size = new System.Drawing.Size(215, 22);
             this.txtFilterUsers.TabIndex = 18;
+            this.txtFilterUsers.TextChanged += new System.EventHandler(this.txtFilterUsers_TextChanged);
+            this.txtFilterUsers.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterUsers_KeyPress);
             // 
             // cbFilterUsers
             // 
             this.cbFilterUsers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFilterUsers.FormattingEnabled = true;
-            this.cbFilterUsers.Location = new System.Drawing.Point(134, 178);
+            this.cbFilterUsers.Location = new System.Drawing.Point(124, 179);
             this.cbFilterUsers.Name = "cbFilterUsers";
             this.cbFilterUsers.Size = new System.Drawing.Size(200, 24);
             this.cbFilterUsers.TabIndex = 17;
+            this.cbFilterUsers.SelectedIndexChanged += new System.EventHandler(this.cbFilterUsers_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(31, 178);
+            this.label3.Location = new System.Drawing.Point(21, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 22);
             this.label3.TabIndex = 16;
@@ -109,20 +102,6 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "# Records: ";
             // 
-            // btnClose
-            // 
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnClose.Location = new System.Drawing.Point(709, 639);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(129, 42);
-            this.btnClose.TabIndex = 13;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -133,16 +112,6 @@
             this.label1.Size = new System.Drawing.Size(314, 51);
             this.label1.TabIndex = 12;
             this.label1.Text = "Manage Users";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(380, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(141, 113);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
             // 
             // dgvUserList
             // 
@@ -172,38 +141,87 @@
             this.deleteToolStripMenuItem,
             this.changePasswordToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(211, 128);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(194, 100);
             // 
             // showDetailsToolStripMenuItem
             // 
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
+            this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
             this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
+            // 
+            // btnAddUser
+            // 
+            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddUser.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUser.Image")));
+            this.btnAddUser.Location = new System.Drawing.Point(699, 151);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Size = new System.Drawing.Size(89, 51);
+            this.btnAddUser.TabIndex = 19;
+            this.btnAddUser.UseVisualStyleBackColor = true;
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnClose.Location = new System.Drawing.Point(709, 639);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(129, 42);
+            this.btnClose.TabIndex = 13;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(380, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(141, 113);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cbForIsActive
+            // 
+            this.cbForIsActive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbForIsActive.FormattingEnabled = true;
+            this.cbForIsActive.Location = new System.Drawing.Point(340, 180);
+            this.cbForIsActive.Name = "cbForIsActive";
+            this.cbForIsActive.Size = new System.Drawing.Size(215, 24);
+            this.cbForIsActive.TabIndex = 20;
+            this.cbForIsActive.SelectedIndexChanged += new System.EventHandler(this.cbForIsActive_SelectedIndexChanged);
             // 
             // UsersList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 708);
+            this.Controls.Add(this.cbForIsActive);
             this.Controls.Add(this.btnAddUser);
             this.Controls.Add(this.txtFilterUsers);
             this.Controls.Add(this.cbFilterUsers);
@@ -216,9 +234,10 @@
             this.Controls.Add(this.dgvUserList);
             this.Name = "UsersList";
             this.Text = "UsersList";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.UsersList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUserList)).EndInit();
             this.contextMenuStrip2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +260,6 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
+        private System.Windows.Forms.ComboBox cbForIsActive;
     }
 }

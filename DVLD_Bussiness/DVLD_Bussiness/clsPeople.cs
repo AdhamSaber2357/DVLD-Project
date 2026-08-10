@@ -78,6 +78,7 @@ namespace DVLD_Bussiness
             int PersonID = clsDataPeople.AddPerson(this.NationalNo, this.FirstName, this.SecondName, this.ThirdName, this.LastName
                 , this.Gender, this.Address, this.Phone, this.Email, this.NationalityID, this.DateOfBirth, this.ImagePath);
 
+            this.PersonID = PersonID;
             return PersonID != -1;
         }
         public bool _UpdatePerson()
@@ -94,6 +95,7 @@ namespace DVLD_Bussiness
 
             if (clsDataPeople.Find(id, ref nationalno, ref firstname, ref secondnane, ref thirdname, ref lastname
                 , ref gender, ref address, ref phone, ref email, ref nationality, ref date, ref imagepath))
+
                 return new clsPeople(id, nationalno
             , firstname, secondnane, thirdname, lastname, gender
             , phone, email, address, nationality, imagepath, date);

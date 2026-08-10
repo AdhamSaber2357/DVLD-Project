@@ -47,6 +47,9 @@ namespace DVLD_Bussiness
         public static int CheckUser(string username,string password)
         { return clsDataUser.CheckUser(username, password); }
         public static DataTable GetUsers() { return clsDataUser.GetAllUsers(); }
+        public static DataTable GetUsersWithIntFilter(string filterby,string value) { return clsDataUser.GetAllUsersFromFilterIntValues(filterby,value); }
+        public static DataTable GetUsersWithStringFilter(string filterby, string value) { return clsDataUser.GetAllUsersFromFilterStringValues(filterby, value); }
+
         public static bool CheckPersonIsUser(int? pid) { return clsDataUser.PresonIsUserOrNot(pid); }
 
         public static clsUser Find(int? UserId)
@@ -56,6 +59,18 @@ namespace DVLD_Bussiness
             bool? isactive = null;
             if(clsDataUser.Find(UserId,ref personid,ref username,ref password,ref isactive))
                 return new clsUser(UserId,personid,username,password,isactive);
+
+            else
+                return null;
+        }
+
+        public static clsUser Find(string username)
+        {
+            int? userid = null; string password = "";
+            int? personid = null;
+            bool? isactive = null;
+            if (clsDataUser.FindByUserName(username, ref personid, ref userid, ref password, ref isactive))
+                return new clsUser(userid, personid, username, password, isactive);
 
             else
                 return null;
@@ -74,6 +89,7 @@ namespace DVLD_Bussiness
         {
             return clsDataUser.UpdateUser(this.UserID, this.UserName, this.Password, this.IsActive);
         }
+        public static bool DeleteUser(int UserID) { return clsDataUser.DeleteUser(UserID); }
 
         public bool Save()
         {
@@ -86,5 +102,7 @@ namespace DVLD_Bussiness
             return UpdateUser();
 
         }
+
+
     }
 }

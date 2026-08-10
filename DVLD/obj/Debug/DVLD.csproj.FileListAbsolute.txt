@@ -6,6 +6,8 @@ C:\Users\Adham Saber\source\repos\DVLD\DVLD\bin\Debug\DVLD_DataLayer.dll
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\bin\Debug\DVLD_Bussiness.pdb
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\bin\Debug\DVLD_DataLayer.pdb
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.csproj.AssemblyReference.cache
+C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.AddUser.resources
+C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.frmUserInfo.resources
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.LoginForUser.resources
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.AddUpdatePeople.resources
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.ctrlFindPerson.resources
@@ -14,10 +16,11 @@ C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.Main.resources
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.PeopleList.resources
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.PersonDetails.resources
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.Properties.Resources.resources
+C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.ctrlUserDetails.resources
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.UsersList.resources
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.csproj.GenerateResource.cache
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.csproj.CoreCompileInputs.cache
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.csproj.Up2Date
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.exe
 C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.pdb
-C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.AddUser.resources
+C:\Users\Adham Saber\source\repos\DVLD\DVLD\obj\Debug\DVLD.frmChangePassword.resources

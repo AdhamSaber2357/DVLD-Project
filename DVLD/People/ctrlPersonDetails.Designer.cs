@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbPersonInfo = new System.Windows.Forms.GroupBox();
             this.llEdit = new System.Windows.Forms.LinkLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbCountry = new System.Windows.Forms.Label();
             this.lbPhone = new System.Windows.Forms.Label();
             this.lbDateOfBirth = new System.Windows.Forms.Label();
@@ -49,40 +48,41 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gbPersonInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbPersonInfo
             // 
-            this.groupBox1.Controls.Add(this.llEdit);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.lbCountry);
-            this.groupBox1.Controls.Add(this.lbPhone);
-            this.groupBox1.Controls.Add(this.lbDateOfBirth);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.lbAddress);
-            this.groupBox1.Controls.Add(this.lbEmail);
-            this.groupBox1.Controls.Add(this.lbGender);
-            this.groupBox1.Controls.Add(this.lbNationalNo);
-            this.groupBox1.Controls.Add(this.lbName);
-            this.groupBox1.Controls.Add(this.lbPersonID);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 19);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(861, 329);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Person Information ";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.gbPersonInfo.Controls.Add(this.llEdit);
+            this.gbPersonInfo.Controls.Add(this.pictureBox1);
+            this.gbPersonInfo.Controls.Add(this.lbCountry);
+            this.gbPersonInfo.Controls.Add(this.lbPhone);
+            this.gbPersonInfo.Controls.Add(this.lbDateOfBirth);
+            this.gbPersonInfo.Controls.Add(this.label16);
+            this.gbPersonInfo.Controls.Add(this.label15);
+            this.gbPersonInfo.Controls.Add(this.label14);
+            this.gbPersonInfo.Controls.Add(this.lbAddress);
+            this.gbPersonInfo.Controls.Add(this.lbEmail);
+            this.gbPersonInfo.Controls.Add(this.lbGender);
+            this.gbPersonInfo.Controls.Add(this.lbNationalNo);
+            this.gbPersonInfo.Controls.Add(this.lbName);
+            this.gbPersonInfo.Controls.Add(this.lbPersonID);
+            this.gbPersonInfo.Controls.Add(this.label7);
+            this.gbPersonInfo.Controls.Add(this.label6);
+            this.gbPersonInfo.Controls.Add(this.label5);
+            this.gbPersonInfo.Controls.Add(this.label4);
+            this.gbPersonInfo.Controls.Add(this.label3);
+            this.gbPersonInfo.Controls.Add(this.label2);
+            this.gbPersonInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPersonInfo.Location = new System.Drawing.Point(3, 19);
+            this.gbPersonInfo.Name = "gbPersonInfo";
+            this.gbPersonInfo.Size = new System.Drawing.Size(861, 329);
+            this.gbPersonInfo.TabIndex = 1;
+            this.gbPersonInfo.TabStop = false;
+            this.gbPersonInfo.Text = "Person Information ";
+            this.gbPersonInfo.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // llEdit
             // 
@@ -94,16 +94,6 @@
             this.llEdit.TabStop = true;
             this.llEdit.Text = "Edit Person Info";
             this.llEdit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llEdit_LinkClicked);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(669, 102);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 197);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
             // 
             // lbCountry
             // 
@@ -285,23 +275,33 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Perosn ID :";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(669, 102);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 197);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // ctrlPersonDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbPersonInfo);
             this.Name = "ctrlPersonDetails";
             this.Size = new System.Drawing.Size(881, 378);
             this.Load += new System.EventHandler(this.ctrlPersonDetails_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbPersonInfo.ResumeLayout(false);
+            this.gbPersonInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbPersonInfo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbAddress;
         private System.Windows.Forms.Label lbEmail;

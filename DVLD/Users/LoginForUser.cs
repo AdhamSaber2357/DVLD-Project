@@ -34,8 +34,8 @@ namespace DVLD
             }
             else
             {
-                Properties.Settings.Default.UserName = "";
-                Properties.Settings.Default.Password = "";
+                Properties.Settings.Default.UserName = txtUserName.Text;
+                Properties.Settings.Default.Password = txtPassword.Text;
                 Properties.Settings.Default.Remember = false;
             }
             Properties.Settings.Default.Save();

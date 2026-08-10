@@ -177,6 +177,33 @@ namespace DVLD_DataLayer
             }
             return false;
         }
+        public static bool FindByUserName(string UserName, ref int? Personid, ref int? UserID, ref string password, ref bool? isactive)
+        {
+            string cconnection = DataBaseSettings.connectionString;
+            string query = "Select * From Users Where UserName = @UserName";
+            using (SqlConnection conn = new SqlConnection(cconnection))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UserName", UserName);
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        Personid = (int)reader["PersonID"];
+                        UserID = (int)reader["UserID"];
+                        password = (string)reader["Password"];
+                        isactive = (bool)reader["IsActive"];
+                        return true;
+                    }
+
+
+                }
+
+            }
+            return false;
+        }
 
         public static bool UpdateUser(int? UserID,string UserName,string Password,bool? IsActive)
         {
@@ -212,6 +239,117 @@ namespace DVLD_DataLayer
             catch (Exception ex) { Console.WriteLine(ex.Message); }
 
             return rows > 0;
+        }
+
+
+
+        public static bool DeleteUser(int UserID)
+        {
+            int rows = 0;
+            try
+            {
+                string connection = DataBaseSettings.connectionString;
+                string query = " Delete From Users where UserID = @UserID;";
+                using (SqlConnection conn = new SqlConnection(connection))
+                {
+                    conn.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UserID", UserID);
+                        rows = cmd.ExecuteNonQuery();
+                    }
+
+
+                }
+
+
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+
+            return rows > 0;
+        }
+
+
+        public static DataTable GetAllUsersFromFilterIntValues(string FilterBy ,string value)
+        {
+            DataTable dt = new DataTable();
+            string connection = DataBaseSettings.connectionString;
+            string query = $@"
+                         Select * From 
+                         
+                         (
+                         
+                         Select u.UserID,p.PersonID , [Full Name] = p.FirstName +' ' + p.SecondName+' '+
+                                                    p.ThirdName +' '+p.LastName ,u.UserName, u.IsActive
+                          From Users u
+                          inner join People p
+                          on u.PersonID = p.PersonID
+                         ) t
+                         Where {FilterBy} = @Value";
+
+            SqlConnection c = new SqlConnection(connection);
+
+            SqlCommand cmd = new SqlCommand(query, c);
+            cmd.Parameters.AddWithValue("@Value",value);
+
+            try
+            {
+                c.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                    dt.Load(reader);
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                c.Close();
+            }
+            return dt;
+        }
+
+        public static DataTable GetAllUsersFromFilterStringValues(string FilterBy, string value)
+        {
+            DataTable dt = new DataTable();
+            string connection = DataBaseSettings.connectionString;
+            string query = $@"
+                         Select * From 
+                         
+                         (
+                         
+                         Select u.UserID,p.PersonID , [Full Name] = p.FirstName +' ' + p.SecondName+' '+
+                                                    p.ThirdName +' '+p.LastName ,u.UserName, u.IsActive
+                          From Users u
+                          inner join People p
+                          on u.PersonID = p.PersonID
+                         ) t
+                         Where [{FilterBy}] like @Value;";
+
+            SqlConnection c = new SqlConnection(connection);
+
+            SqlCommand cmd = new SqlCommand(query, c);
+            cmd.Parameters.AddWithValue("@Value", value + "%");
+
+            try
+            {
+                c.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                    dt.Load(reader);
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                c.Close();
+            }
+            return dt;
         }
     }
 

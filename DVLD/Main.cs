@@ -41,13 +41,22 @@ namespace DVLD
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            clsUser currentUser = clsUser.Find(Properties.Settings.Default.UserName);
+            frmChangePassword cp = new frmChangePassword(currentUser.UserID);
+            cp.ShowDialog();
         }
 
         private void menuUsers_Click(object sender, EventArgs e)
         {
             UsersList u = new UsersList();
             u.ShowDialog();
+        }
+
+        private void currentUserInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clsUser currentUser = clsUser.Find(Properties.Settings.Default.UserName);
+            frmUserInfo fi = new frmUserInfo(currentUser.UserID);
+            fi.ShowDialog();
         }
     }
 }

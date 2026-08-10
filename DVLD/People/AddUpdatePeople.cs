@@ -16,6 +16,7 @@ namespace DVLD
  
     public partial class AddUpdatePeople : Form
     {
+        public Action<int?> GetPersonID;
 
         public int PersonID;
         clsPeople Person;
@@ -80,7 +81,10 @@ namespace DVLD
             StoreData();
 
             if (Person.Save())
+            {
                 MessageBox.Show("Person added successfully");
+                GetPersonID(Person.PersonID);
+            }
         }
 
         public void PutData()
