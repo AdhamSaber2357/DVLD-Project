@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\frmUserInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DVLD\\frmUserInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\people\\persondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\persondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|c:\\users\\adham saber\\source\\repos\\dvld\\dvld\\people\\ctrlpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\people\\ctrlpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\ctrlpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\people\\persondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\persondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\people\\peoplelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -25,30 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\ctrluserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\ctrluserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\ctrluserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\ctrluserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\frmuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\frmuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\people\\addupdatepeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\ctrlpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,16 +51,8 @@
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\people\\peoplelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\loginforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\loginforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\loginforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C9E636AC-C051-4C69-9521-936DE71111A7}|DVLD\\DVLD.csproj|solutionrelative:dvld\\loginforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\adham saber\\source\\repos\\dvld_bussiness\\dvld_bussiness\\clsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -110,6 +74,42 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\adham saber\\source\\repos\\dvld_bussiness\\dvld_bussiness\\clscountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\adham saber\\source\\repos\\dvld\\dvld\\frmuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dvld\\frmuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dvld\\userslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DVLD\\UsersList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\ctrluserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dvld\\ctrluserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dvld\\adduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\AddUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DVLD\\AddUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\ctrlUserDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DVLD\\ctrlUserDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\LoginForUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DVLD\\LoginForUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adham Saber\\source\\repos\\DVLD\\dvld\\loginforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dvld\\loginforuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -119,66 +119,96 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\Main.cs",
-              "RelativeDocumentMoniker": "DVLD\\Main.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\Main.cs [Design]",
-              "RelativeToolTip": "DVLD\\Main.cs [Design]",
+              "DocumentIndex": 20,
+              "Title": "frmUserInfo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\frmUserInfo.cs",
+              "RelativeDocumentMoniker": "DVLD\\frmUserInfo.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\frmUserInfo.cs [Design]*",
+              "RelativeToolTip": "DVLD\\frmUserInfo.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T14:28:15.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ctrlPersonDetails.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\ctrlPersonDetails.cs",
-              "RelativeDocumentMoniker": "DVLD\\People\\ctrlPersonDetails.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\ctrlPersonDetails.cs [Design]",
-              "RelativeToolTip": "DVLD\\People\\ctrlPersonDetails.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-24T00:57:05.359Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PeopleList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PeopleList.cs",
-              "RelativeDocumentMoniker": "DVLD\\People\\PeopleList.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PeopleList.cs [Design]",
-              "RelativeToolTip": "DVLD\\People\\PeopleList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-22T15:18:12.837Z"
+              "WhenOpened": "2026-08-09T15:02:48.442Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmUserInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\frmUserInfo.cs",
+              "RelativeDocumentMoniker": "DVLD\\frmUserInfo.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\frmUserInfo.cs",
+              "RelativeToolTip": "DVLD\\frmUserInfo.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T15:01:34.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PersonDetails.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PersonDetails.cs",
               "RelativeDocumentMoniker": "DVLD\\People\\PersonDetails.cs",
               "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PersonDetails.cs [Design]",
               "RelativeToolTip": "DVLD\\People\\PersonDetails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T13:48:02.291Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-08-09T14:58:58.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UsersList.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs",
+              "RelativeDocumentMoniker": "DVLD\\UsersList.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs [Design]*",
+              "RelativeToolTip": "DVLD\\UsersList.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T15:40:40.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UsersList.cs",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs",
+              "RelativeDocumentMoniker": "DVLD\\UsersList.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs",
+              "RelativeToolTip": "DVLD\\UsersList.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowEAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T15:42:31.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ctrlUserDetails.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\ctrlUserDetails.cs",
+              "RelativeDocumentMoniker": "DVLD\\ctrlUserDetails.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\ctrlUserDetails.cs [Design]",
+              "RelativeToolTip": "DVLD\\ctrlUserDetails.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T14:47:26.943Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PersonDetails.cs",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PersonDetails.cs",
-              "RelativeDocumentMoniker": "DVLD\\People\\PersonDetails.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PersonDetails.cs",
-              "RelativeToolTip": "DVLD\\People\\PersonDetails.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCgAAAAeAAAAAAAAAA==",
+              "Title": "ctrlPersonDetails.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\ctrlPersonDetails.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\ctrlPersonDetails.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\ctrlPersonDetails.cs [Design]",
+              "RelativeToolTip": "DVLD\\People\\ctrlPersonDetails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T13:48:32.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-24T00:57:05.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AddUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\AddUser.cs",
+              "RelativeDocumentMoniker": "DVLD\\AddUser.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\AddUser.cs [Design]",
+              "RelativeToolTip": "DVLD\\AddUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-07T22:34:44.898Z"
             },
             {
               "$type": "Document",
@@ -193,29 +223,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsersList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs",
-              "RelativeDocumentMoniker": "DVLD\\UsersList.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs [Design]",
-              "RelativeToolTip": "DVLD\\UsersList.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "PeopleList.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PeopleList.cs",
+              "RelativeDocumentMoniker": "DVLD\\People\\PeopleList.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PeopleList.cs [Design]",
+              "RelativeToolTip": "DVLD\\People\\PeopleList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-01T15:40:40.767Z"
+              "WhenOpened": "2026-07-22T15:18:12.837Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddUser.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\AddUser.cs",
-              "RelativeDocumentMoniker": "DVLD\\AddUser.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\AddUser.cs [Design]",
-              "RelativeToolTip": "DVLD\\AddUser.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\Main.cs",
+              "RelativeDocumentMoniker": "DVLD\\Main.cs",
+              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\Main.cs [Design]",
+              "RelativeToolTip": "DVLD\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-07T22:34:44.898Z"
+              "WhenOpened": "2026-07-23T14:28:15.173Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "ctrlPersonDetails.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\ctrlPersonDetails.cs",
               "RelativeDocumentMoniker": "DVLD\\People\\ctrlPersonDetails.cs",
@@ -227,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "ctrlFindPerson.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\ctrlFindPerson.cs",
               "RelativeDocumentMoniker": "DVLD\\People\\ctrlFindPerson.cs",
@@ -239,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 25,
               "Title": "AddUser.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\AddUser.cs",
               "RelativeDocumentMoniker": "DVLD\\AddUser.cs",
@@ -251,29 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmUserInfo.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\frmUserInfo.cs",
-              "RelativeDocumentMoniker": "DVLD\\frmUserInfo.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\frmUserInfo.cs [Design]",
-              "RelativeToolTip": "DVLD\\frmUserInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T14:46:58.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ctrlUserDetails.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\ctrlUserDetails.cs",
-              "RelativeDocumentMoniker": "DVLD\\ctrlUserDetails.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\ctrlUserDetails.cs [Design]",
-              "RelativeToolTip": "DVLD\\ctrlUserDetails.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T14:47:26.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 26,
               "Title": "ctrlUserDetails.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\ctrlUserDetails.cs",
               "RelativeDocumentMoniker": "DVLD\\ctrlUserDetails.cs",
@@ -285,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 13,
               "Title": "clsUser.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD_Bussiness\\DVLD_Bussiness\\clsUser.cs",
               "RelativeDocumentMoniker": "DVLD_Bussiness\\DVLD_Bussiness\\clsUser.cs",
@@ -297,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "AddUpdatePeople.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\AddUpdatePeople.cs",
               "RelativeDocumentMoniker": "DVLD\\People\\AddUpdatePeople.cs",
@@ -308,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "AddUpdatePeople.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\AddUpdatePeople.cs",
               "RelativeDocumentMoniker": "DVLD\\People\\AddUpdatePeople.cs",
@@ -320,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 14,
               "Title": "clsDataUser.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD_DataLayer\\DVLD_DataLayer\\clsDataUser.cs",
               "RelativeDocumentMoniker": "DVLD_DataLayer\\DVLD_DataLayer\\clsDataUser.cs",
@@ -332,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "PeopleList.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\People\\PeopleList.cs",
               "RelativeDocumentMoniker": "DVLD\\People\\PeopleList.cs",
@@ -344,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\Main.cs",
               "RelativeDocumentMoniker": "DVLD\\Main.cs",
@@ -356,19 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UsersList.cs",
-              "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs",
-              "RelativeDocumentMoniker": "DVLD\\UsersList.cs",
-              "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\UsersList.cs",
-              "RelativeToolTip": "DVLD\\UsersList.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAmwCsAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-01T15:42:31.75Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 15,
               "Title": "clsDataPeople.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD_DataLayer\\DVLD_DataLayer\\clsDataPeople.cs",
               "RelativeDocumentMoniker": "DVLD_DataLayer\\DVLD_DataLayer\\clsDataPeople.cs",
@@ -380,19 +376,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "LoginForUser.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\LoginForUser.cs",
               "RelativeDocumentMoniker": "DVLD\\LoginForUser.cs",
               "ToolTip": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\LoginForUser.cs",
               "RelativeToolTip": "DVLD\\LoginForUser.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAAD4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-01T02:54:10.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\Program.cs",
               "RelativeDocumentMoniker": "DVLD\\Program.cs",
@@ -404,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "LoginForUser.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD\\LoginForUser.cs",
               "RelativeDocumentMoniker": "DVLD\\LoginForUser.cs",
@@ -415,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 16,
               "Title": "DataBaseSettings.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD_DataLayer\\DVLD_DataLayer\\DataBaseSettings.cs",
               "RelativeDocumentMoniker": "DVLD_DataLayer\\DVLD_DataLayer\\DataBaseSettings.cs",
@@ -427,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 17,
               "Title": "clsDataCountry.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD_DataLayer\\DVLD_DataLayer\\clsDataCountry.cs",
               "RelativeDocumentMoniker": "DVLD_DataLayer\\DVLD_DataLayer\\clsDataCountry.cs",
@@ -439,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 18,
               "Title": "clsPeople.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD_Bussiness\\DVLD_Bussiness\\clsPeople.cs",
               "RelativeDocumentMoniker": "DVLD_Bussiness\\DVLD_Bussiness\\clsPeople.cs",
@@ -451,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 19,
               "Title": "clsCountry.cs",
               "DocumentMoniker": "C:\\Users\\Adham Saber\\source\\repos\\DVLD\\DVLD_Bussiness\\DVLD_Bussiness\\clsCountry.cs",
               "RelativeDocumentMoniker": "DVLD_Bussiness\\DVLD_Bussiness\\clsCountry.cs",
