@@ -43,7 +43,10 @@ namespace DVLD_Bussiness
             _enMode =Mode.Update;
         }
 
-
+        public static bool IsUserExist(string UserName)
+        {
+            return clsDataUser.IsUserExist(UserName);
+        }
         public static int CheckUser(string username,string password)
         { return clsDataUser.CheckUser(username, password); }
         public static DataTable GetUsers() { return clsDataUser.GetAllUsers(); }

@@ -11,6 +11,39 @@ namespace DVLD_DataLayer
     public static class clsDataUser
     {
 
+
+        public static bool IsUserExist(string UserName)
+        {
+            bool isFound = false;
+
+            using (SqlConnection connection = new SqlConnection(DataBaseSettings.connectionString))
+            {
+                string query = "SELECT Found=1 FROM Users WHERE UserName = @UserName";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@UserName", UserName);
+
+                    try
+                    {
+                        connection.Open();
+                        object result = command.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            isFound = true;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        isFound = false;
+                    }
+                }
+            }
+
+            return isFound;
+        }
+
         public static int CheckUser(string username, string password)
         {
             string connection = DataBaseSettings.connectionString;
