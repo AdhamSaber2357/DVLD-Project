@@ -58,5 +58,11 @@ namespace DVLD
             frmUserInfo fi = new frmUserInfo(currentUser.UserID);
             fi.ShowDialog();
         }
+
+        private void manageApplicationTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmApplicationTypes at = new frmApplicationTypes();
+            at.ShowDialog();
+        }
     }
 }
