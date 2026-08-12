@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DVLD_Bussiness;
+using DVLD_Business;
 namespace DVLD
 {
     
@@ -29,7 +29,7 @@ namespace DVLD
 
         private void txtUserName_Validating(object sender, CancelEventArgs e)
         {
-            if (txtOldPssword.Text != _User.Password)
+            if (txtOldPssword.Text != _User.Password || string.IsNullOrEmpty(txtOldPssword.Text))
             {
                 e.Cancel = true;
                 txtOldPssword.Focus();
@@ -84,6 +84,8 @@ namespace DVLD
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (!this.ValidateChildren())
+                return;
             _User.Password = txtNewPassword.Text;
             if (_User.Save())
                 MessageBox.Show("Password changed successfully");

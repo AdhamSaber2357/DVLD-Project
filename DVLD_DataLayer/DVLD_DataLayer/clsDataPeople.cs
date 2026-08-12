@@ -159,7 +159,7 @@ namespace DVLD_DataLayer
                     Update People 
                     Set NationalNo=@NationalNo,FirstName=@FirstName,SecondName=@SecondName,ThirdName=@ThirdName,LastName=@LastName
                     ,Gendor=@Gendor,Address=@Address,Phone=@Phone,Email=@Email,
-                    NationalityCountryID=@NationalityCountryID,ImagePath=@ImagePath
+                    NationalityCountryID=@NationalityCountryID,DateOfBirth=@DateOfBirth,ImagePath=@ImagePath
                     where PersonID=@PersonID;";
 
             SqlCommand cmd = new SqlCommand(query, c);

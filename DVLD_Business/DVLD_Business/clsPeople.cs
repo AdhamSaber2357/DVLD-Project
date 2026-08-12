@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DVLD_DataLayer;
 
-namespace DVLD_Bussiness
+namespace DVLD_Business
 {
     public class clsPeople
     {

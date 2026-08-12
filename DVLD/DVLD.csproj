@@ -192,9 +192,9 @@
     <None Include="Resources\Male 512.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DVLD_Bussiness\DVLD_Bussiness\DVLD_Bussiness.csproj">
+    <ProjectReference Include="..\DVLD_Business\DVLD_Business\DVLD_Business.csproj">
       <Project>{b58420c1-f730-454c-959f-4550e14e58a2}</Project>
-      <Name>DVLD_Bussiness</Name>
+      <Name>DVLD_Business</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
