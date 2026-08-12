@@ -40,5 +40,10 @@ namespace DVLD
             app.ShowDialog();
             _Refresh();
         }
+
+        private void frmApplicationTypes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

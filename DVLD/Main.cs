@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using DVLD_Business;
+using DVLD.Applications.ApplicationsType;
 namespace DVLD
 {
     public partial class Main : Form
@@ -63,6 +64,12 @@ namespace DVLD
         {
             frmApplicationTypes at = new frmApplicationTypes();
             at.ShowDialog();
+        }
+
+        private void manageTestTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManageTestTypes frm = new frmManageTestTypes();
+            frm.ShowDialog();
         }
     }
 }

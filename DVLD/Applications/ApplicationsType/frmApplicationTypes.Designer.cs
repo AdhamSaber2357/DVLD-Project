@@ -49,7 +49,7 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(221, 56);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(221, 28);
             // 
             // editToolStripMenuItem
             // 
@@ -146,6 +146,7 @@
             this.Name = "frmApplicationTypes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmApplicationTypes";
+            this.Load += new System.EventHandler(this.frmApplicationTypes_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplicationList)).EndInit();
