@@ -29,7 +29,8 @@ namespace DVLD
 
         private void txtUserName_Validating(object sender, CancelEventArgs e)
         {
-            if (txtOldPssword.Text != _User.Password || string.IsNullOrEmpty(txtOldPssword.Text))
+
+            if (clsGlobal.ComputeHashing(txtOldPssword.Text) != _User.Password || string.IsNullOrEmpty(txtOldPssword.Text))
             {
                 e.Cancel = true;
                 txtOldPssword.Focus();
@@ -86,7 +87,7 @@ namespace DVLD
         {
             if (!this.ValidateChildren())
                 return;
-            _User.Password = txtNewPassword.Text;
+            _User.Password =clsGlobal.ComputeHashing(txtNewPassword.Text);
             if (_User.Save())
                 MessageBox.Show("Password changed successfully");
         }

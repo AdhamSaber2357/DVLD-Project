@@ -42,7 +42,8 @@ namespace DVLD
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            int Check = clsUser.CheckUser(txtUserName.Text, txtPassword.Text);
+            string Password = clsGlobal.ComputeHashing(txtPassword.Text);
+            int Check = clsUser.CheckUser(txtUserName.Text, Password);
            
             if (Check == 1)
             {

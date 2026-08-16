@@ -159,8 +159,6 @@ namespace DVLD
                 ctrlFindPerson1.PersonDatailsAccess.LoadPersonInfo(_User.PersonID);
 
                 txtUserName.Text = _User.UserName;
-                txtPassword.Text = _User.Password;
-                txtConfirmPassword.Text = _User.Password;
                 lbUserID.Text = _User.UserID.ToString();
                 chkIsActive.Checked = Convert.ToBoolean(_User.IsActive);
                 ctrlFindPerson1.SearchGroupBoxAccess.Enabled = false;

@@ -34,7 +34,7 @@ namespace DVLD.Applications.ApplicationsType
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmUpdateTestType frm = new frmUpdateTestType(Convert.ToInt32(dvgTestsList.CurrentRow.Cells[0].Value));
+            frmUpdateTestType frm = new frmUpdateTestType((clsTestType.enTestType)dvgTestsList.CurrentRow.Cells[0].Value);
             frm.ShowDialog();
             _Refresh();
         }

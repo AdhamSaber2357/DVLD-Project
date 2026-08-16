@@ -75,6 +75,8 @@
     <Compile Include="Applications\TestTypes\frmUpdateTestType.Designer.cs">
       <DependentUpon>frmUpdateTestType.cs</DependentUpon>
     </Compile>
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="frmApplicationTypes.Designer.cs" />
     <Compile Include="Users\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>

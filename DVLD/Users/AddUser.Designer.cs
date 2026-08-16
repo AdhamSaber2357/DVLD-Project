@@ -32,6 +32,7 @@
             this.lbAddorUpdate = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpPersonInfo = new System.Windows.Forms.TabPage();
+            this.btnAddPerson = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.tbLoginInfo = new System.Windows.Forms.TabPage();
             this.chkIsActive = new System.Windows.Forms.CheckBox();
@@ -47,7 +48,6 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.ctrlFindPerson1 = new DVLD.ctrlFindPerson();
-            this.btnAddPerson = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tpPersonInfo.SuspendLayout();
             this.tbLoginInfo.SuspendLayout();
@@ -88,6 +88,19 @@
             this.tpPersonInfo.TabIndex = 0;
             this.tpPersonInfo.Text = "Person Info";
             this.tpPersonInfo.UseVisualStyleBackColor = true;
+            // 
+            // btnAddPerson
+            // 
+            this.btnAddPerson.BackColor = System.Drawing.Color.Black;
+            this.btnAddPerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPerson.ForeColor = System.Drawing.Color.Gold;
+            this.btnAddPerson.Location = new System.Drawing.Point(733, 37);
+            this.btnAddPerson.Name = "btnAddPerson";
+            this.btnAddPerson.Size = new System.Drawing.Size(177, 42);
+            this.btnAddPerson.TabIndex = 4;
+            this.btnAddPerson.Text = "Add New Person";
+            this.btnAddPerson.UseVisualStyleBackColor = false;
+            this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
             // 
             // btnNext
             // 
@@ -140,26 +153,26 @@
             this.txtPassword.Location = new System.Drawing.Point(251, 195);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(153, 22);
+            this.txtPassword.Size = new System.Drawing.Size(462, 22);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtPassword_Validating);
             // 
             // txtConfirmPassword
             // 
             this.txtConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConfirmPassword.Location = new System.Drawing.Point(251, 257);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(251, 260);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
-            this.txtConfirmPassword.Size = new System.Drawing.Size(153, 22);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(462, 22);
             this.txtConfirmPassword.TabIndex = 6;
             this.txtConfirmPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtConfirmPassword_Validating);
             // 
             // txtUserName
             // 
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUserName.Location = new System.Drawing.Point(251, 128);
+            this.txtUserName.Location = new System.Drawing.Point(251, 133);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(153, 22);
+            this.txtUserName.Size = new System.Drawing.Size(462, 22);
             this.txtUserName.TabIndex = 5;
             this.txtUserName.Validating += new System.ComponentModel.CancelEventHandler(this.txtUserName_Validating);
             // 
@@ -249,19 +262,6 @@
             this.ctrlFindPerson1.Name = "ctrlFindPerson1";
             this.ctrlFindPerson1.Size = new System.Drawing.Size(1064, 431);
             this.ctrlFindPerson1.TabIndex = 0;
-            // 
-            // btnAddPerson
-            // 
-            this.btnAddPerson.BackColor = System.Drawing.Color.Black;
-            this.btnAddPerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddPerson.ForeColor = System.Drawing.Color.Gold;
-            this.btnAddPerson.Location = new System.Drawing.Point(733, 37);
-            this.btnAddPerson.Name = "btnAddPerson";
-            this.btnAddPerson.Size = new System.Drawing.Size(177, 42);
-            this.btnAddPerson.TabIndex = 4;
-            this.btnAddPerson.Text = "Add New Person";
-            this.btnAddPerson.UseVisualStyleBackColor = false;
-            this.btnAddPerson.Click += new System.EventHandler(this.btnAddPerson_Click);
             // 
             // AddUser
             // 

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+  <defs>
+    <style>
+      .panel{fill:#dceeff}.tbl{fill:#fff;stroke:#1f2937;stroke-width:1.8}.grid{stroke:#1f2937;stroke-width:1.5}.name{font:700 20px Arial,sans-serif;fill:#111827}.cell{font:17px Arial,sans-serif;fill:#171717}.pk{font-weight:700;text-decoration:underline}.fk{font-weight:700;fill:#075f9e}.arrow{fill:none;stroke:#1298ef;stroke-width:2.4;marker-end:url(#tip)}
+    </style>
+    <marker id="tip" markerWidth="9" markerHeight="9" refX="8" refY="3.5" orient="auto"><path d="M0,0 L0,7 L8,3.5 z" fill="#1298ef"/></marker>
+  </defs>
+  <rect width="1600" height="1050" fill="#f7faff"/>
+  <rect x="48" y="45" width="1504" height="960" class="panel"/>
+
+  <!-- source parent tables -->
+  <text x="105" y="115" class="name">TOPIC</text>
+  <rect x="105" y="128" width="255" height="54" class="tbl"/><line x1="220" y1="128" x2="220" y2="182" class="grid"/>
+  <text x="122" y="161" class="cell pk">TID</text><text x="238" y="161" class="cell">TName</text>
+
+  <text x="635" y="115" class="name">DEPARTMENT</text>
+  <rect x="635" y="128" width="295" height="54" class="tbl"/><line x1="765" y1="128" x2="765" y2="182" class="grid"/>
+  <text x="652" y="161" class="cell pk">DID</text><text x="784" y="161" class="cell">DName</text>
+
+  <!-- course -->
+  <text x="105" y="275" class="name">COURSE</text>
+  <rect x="105" y="288" width="780" height="54" class="tbl"/>
+  <line x1="205" y1="288" x2="205" y2="342" class="grid"/><line x1="335" y1="288" x2="335" y2="342" class="grid"/><line x1="480" y1="288" x2="480" y2="342" class="grid"/><line x1="665" y1="288" x2="665" y2="342" class="grid"/>
+  <text x="121" y="321" class="cell pk">CID</text><text x="222" y="321" class="cell">CName</text><text x="351" y="321" class="cell">Duration</text><text x="496" y="321" class="cell">Description</text><text x="682" y="321" class="cell fk">TID (FK)</text>
+
+  <!-- student -->
+  <text x="105" y="445" class="name">STUDENT</text>
+  <rect x="105" y="458" width="1040" height="54" class="tbl"/>
+  <line x1="205" y1="458" x2="205" y2="512" class="grid"/><line x1="335" y1="458" x2="335" y2="512" class="grid"/><line x1="465" y1="458" x2="465" y2="512" class="grid"/><line x1="555" y1="458" x2="555" y2="512" class="grid"/><line x1="690" y1="458" x2="690" y2="512" class="grid"/><line x1="825" y1="458" x2="825" y2="512" class="grid"/>
+  <text x="121" y="491" class="cell pk">SID</text><text x="222" y="491" class="cell">FName</text><text x="351" y="491" class="cell">LName</text><text x="482" y="491" class="cell">Age</text><text x="572" y="491" class="cell">Address</text><text x="707" y="491" class="cell fk">DID (FK)</text><text x="842" y="491" class="cell fk">SupervisorSID (FK)</text>
+
+  <!-- instructor -->
+  <text x="105" y="615" class="name">INSTRUCTOR</text>
+  <rect x="105" y="628" width="1060" height="54" class="tbl"/>
+  <line x1="220" y1="628" x2="220" y2="682" class="grid"/><line x1="365" y1="628" x2="365" y2="682" class="grid"/><line x1="470" y1="628" x2="470" y2="682" class="grid"/><line x1="575" y1="628" x2="575" y2="682" class="grid"/><line x1="710" y1="628" x2="710" y2="682" class="grid"/><line x1="850" y1="628" x2="850" y2="682" class="grid"/>
+  <text x="122" y="661" class="cell pk">InsID</text><text x="237" y="661" class="cell">InsName</text><text x="382" y="661" class="cell">Salary</text><text x="487" y="661" class="cell">Bonus</text><text x="592" y="661" class="cell">Address</text><text x="727" y="661" class="cell">Hour_Rate</text><text x="867" y="661" class="cell fk">DID (FK)</text>
+
+  <!-- relationship tables -->
+  <text x="105" y="805" class="name">TAKE</text>
+  <rect x="105" y="818" width="390" height="54" class="tbl"/><line x1="240" y1="818" x2="240" y2="872" class="grid"/><line x1="375" y1="818" x2="375" y2="872" class="grid"/>
+  <text x="121" y="851" class="cell pk fk">SID (FK)</text><text x="256" y="851" class="cell pk fk">CID (FK)</text><text x="391" y="851" class="cell">Grade</text>
+
+  <text x="625" y="805" class="name">TEACH</text>
+  <rect x="625" y="818" width="450" height="54" class="tbl"/><line x1="785" y1="818" x2="785" y2="872" class="grid"/><line x1="930" y1="818" x2="930" y2="872" class="grid"/>
+  <text x="641" y="851" class="cell pk fk">InsID (FK)</text><text x="801" y="851" class="cell pk fk">CID (FK)</text><text x="946" y="851" class="cell">Evaluation</text>
+
+  <text x="1150" y="805" class="name">MANAGE</text>
+  <rect x="1150" y="818" width="355" height="54" class="tbl"/><line x1="1270" y1="818" x2="1270" y2="872" class="grid"/><line x1="1400" y1="818" x2="1400" y2="872" class="grid"/>
+  <text x="1163" y="851" class="cell pk fk">DID (FK)</text><text x="1283" y="851" class="cell fk">InsID (FK)</text><text x="1413" y="851" class="cell">HireDate</text>
+
+  <!-- FK connectors: each blue arrow ends at referenced primary key -->
+  <path d="M760 288 C760 230 170 235 170 183" class="arrow"/>
+  <path d="M770 458 C770 300 720 280 720 183" class="arrow"/>
+  <path d="M920 628 C980 430 835 300 790 183" class="arrow"/>
+  <path d="M170 818 C65 760 65 555 155 512" class="arrow"/>
+  <path d="M305 818 C360 750 265 690 155 682" class="arrow"/>
+  <path d="M705 818 C650 750 250 745 165 682" class="arrow"/>
+  <path d="M850 818 C1030 645 730 365 155 342" class="arrow"/>
+  <path d="M1210 818 C1090 700 930 450 790 183" class="arrow"/>
+  <path d="M1335 818 C1260 750 315 730 165 682" class="arrow"/>
+  <!-- recursive Student supervisor FK points to Student SID -->
+  <path d="M975 458 C1100 405 1080 360 205 458" class="arrow"/>
+</svg>

@@ -8,24 +8,25 @@ namespace DVLD_Business
         public enum enMode { Add, Update }
         private enMode _Mode;
 
-        public int? TestTypeID { get; set; }
+        public enum enTestType { VisionTest = 1, WrittenTest = 2, StreetTest = 3 };
+        public clsTestType.enTestType ID { get; set; }
         public string TestTypeTitle { get; set; }
         public string TestTypeDescription { get; set; }
         public decimal TestTypeFees { get; set; }
 
         public clsTestType()
         {
-            TestTypeID = null;
+            ID = clsTestType.enTestType.VisionTest;
             TestTypeTitle = null;
             TestTypeDescription = null;
             TestTypeFees = 0;
             _Mode = enMode.Add;
         }
 
-        private clsTestType(int? testTypeID, string testTypeTitle,
+        private clsTestType(clsTestType.enTestType testTypeID, string testTypeTitle,
             string testTypeDescription, decimal testTypeFees)
         {
-            TestTypeID = testTypeID;
+            ID = testTypeID;
             TestTypeTitle = testTypeTitle;
             TestTypeDescription = testTypeDescription;
             TestTypeFees = testTypeFees;
@@ -37,16 +38,16 @@ namespace DVLD_Business
             return clsDataTestType.GetAllTestTypes();
         }
 
-        public static clsTestType Find(int? testTypeID)
+        public static clsTestType Find(clsTestType.enTestType TestTypeID )
         {
             string testTypeTitle = string.Empty;
             string testTypeDescription = string.Empty;
             decimal testTypeFees = 0;
 
-            if (clsDataTestType.Find(testTypeID, ref testTypeTitle,
+            if (clsDataTestType.Find((int)TestTypeID, ref testTypeTitle,
                 ref testTypeDescription, ref testTypeFees))
             {
-                return new clsTestType(testTypeID, testTypeTitle,
+                return new clsTestType(TestTypeID, testTypeTitle,
                     testTypeDescription, testTypeFees);
             }
 
@@ -55,7 +56,7 @@ namespace DVLD_Business
 
         private bool _UpdateTestType()
         {
-            return clsDataTestType.UpdateTestType(TestTypeID, TestTypeTitle,
+            return clsDataTestType.UpdateTestType((int)ID, TestTypeTitle,
                 TestTypeDescription, TestTypeFees);
         }
 
