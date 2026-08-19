@@ -51,52 +51,61 @@ namespace DVLD_DataLayer
 
 
 
-        public static DataTable GetAllPeopleWithFilter(string Attribute, string value)
-
+        public static DataTable GetAllPeopleWithIntFilter(string filterBy, string value)
         {
-            if (Attribute == "None" || value == "")
-            {
+            return _GetAllPeopleWithFilter(filterBy, value, "=");
+        }
+
+        public static DataTable GetAllPeopleWithStringFilter(string filterBy, string value)
+        {
+            return _GetAllPeopleWithFilter(filterBy, value + "%", "LIKE");
+        }
+
+        public static DataTable GetAllPeopleWithDateFilter(string filterBy, string value)
+        {
+            return _GetAllPeopleWithFilter(filterBy, value + "%", "LIKE", true);
+        }
+
+        private static DataTable _GetAllPeopleWithFilter(string filterBy, string value,
+            string comparison, bool isDate = false)
+        {
+            string[] allowedColumns = { "PersonID", "NationalNo", "FirstName", "SecondName", "ThirdName",
+                "LastName", "Gender", "DateOfBirth", "Phone", "Email", "Nationality" };
+
+            if (!allowedColumns.Contains(filterBy))
                 return GetAllPeople();
 
-            }
-            else
+            DataTable dt = new DataTable();
+            string query = $@"SELECT * FROM
+                              (
+                                  Select p.PersonID,p.NationalNo,p.FirstName,p.SecondName,p.ThirdName, p.LastName,
+                                  Gender = Case When p.Gendor = 0 Then 'Male' When p.Gendor = 1 Then 'Female' End,
+                                  p.DateOfBirth,p.Phone,p.Email, c.CountryName as Nationality
+                                  From People as p
+                                  Inner Join Countries as c on p.NationalityCountryID = c.CountryID
+                              ) AS PeopleList
+                              WHERE {(isDate ? "CONVERT(varchar(30), [DateOfBirth], 120)" : "[" + filterBy + "]")} {comparison} @Value;";
+
+            using (SqlConnection connection = new SqlConnection(DataBaseSettings.connectionString))
+            using (SqlCommand command = new SqlCommand(query, connection))
             {
-
-                DataTable dt = new DataTable();
-                string connection = DataBaseSettings.connectionString;
-                string query = $@"Select p.PersonID,p.NationalNo,p.FirstName,p.SecondName,p.ThirdName , p.LastName , Gender = Case 
-                            When p.Gendor = 0 Then 'Male'
-                            When p.Gendor = 1 Then 'Female'
-                         End
-                         ,p.DateOfBirth,p.Phone,p.Email, c.CountryName as Nationality
-                         From People as p
-                         Inner Join Countries as c on
-                         p.NationalityCountryID = c.CountryID Where {Attribute} = @value
-                         ";
-
-                SqlConnection c = new SqlConnection(connection);
-                SqlCommand cmd = new SqlCommand(query, c);
-                cmd.Parameters.AddWithValue("@value", value);
+                command.Parameters.AddWithValue("@Value", value);
 
                 try
                 {
-                    c.Open();
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    if (reader.HasRows)
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
                         dt.Load(reader);
+                    }
                 }
-
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
-                finally
-                {
-                    c.Close();
-                }
-                return dt;
-
             }
+
+            return dt;
         }
 
 

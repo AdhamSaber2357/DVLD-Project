@@ -67,8 +67,12 @@ namespace DVLD_Business
 
         public static DataTable GetPeople()
         { return clsDataPeople.GetAllPeople(); }
-        public static DataTable GetPeopleWithFilter(string Attribute, string value)
-        { return clsDataPeople.GetAllPeopleWithFilter(Attribute, value); }
+        public static DataTable GetPeopleWithIntFilter(string filterBy, string value)
+        { return clsDataPeople.GetAllPeopleWithIntFilter(filterBy, value); }
+        public static DataTable GetPeopleWithStringFilter(string filterBy, string value)
+        { return clsDataPeople.GetAllPeopleWithStringFilter(filterBy, value); }
+        public static DataTable GetPeopleWithDateFilter(string filterBy, string value)
+        { return clsDataPeople.GetAllPeopleWithDateFilter(filterBy, value); }
 
 
         public bool _AddNewPerson()

@@ -47,6 +47,7 @@
     <Compile Include="clsDataUser.cs" />
     <Compile Include="clsDataApplicationType.cs" />
     <Compile Include="clsDataTestType.cs" />
+    <Compile Include="clsDataApplications.cs" />
     <Compile Include="DataBaseSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

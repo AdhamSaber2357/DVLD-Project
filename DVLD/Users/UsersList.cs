@@ -136,12 +136,11 @@ namespace DVLD
             else if (cbFilterUsers.SelectedItem.ToString() == "PersonID" || cbFilterUsers.SelectedItem.ToString() == "UserID")
                 dgvUserList.DataSource = clsUser.GetUsersWithIntFilter(cbFilterUsers.SelectedItem.ToString(), txtFilterUsers.Text);
 
-           
-
-
 
             else
                 dgvUserList.DataSource = clsUser.GetUsersWithStringFilter(cbFilterUsers.SelectedItem.ToString(), txtFilterUsers.Text);
+
+             lbUsersNumber.Text = dgvUserList.RowCount.ToString();
         }
 
         private void cbForIsActive_SelectedIndexChanged(object sender, EventArgs e)
@@ -154,6 +153,7 @@ namespace DVLD
                     dgvUserList.DataSource = clsUser.GetUsersWithIntFilter(cbFilterUsers.SelectedItem.ToString(), "1");
                 else
                     dgvUserList.DataSource = clsUser.GetUsersWithIntFilter(cbFilterUsers.SelectedItem.ToString(), "0");
+                lbUsersNumber.Text = dgvUserList.RowCount.ToString();
 
             }
         }

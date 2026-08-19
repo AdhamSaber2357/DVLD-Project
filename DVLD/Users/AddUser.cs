@@ -122,7 +122,7 @@ namespace DVLD
                 _User = new clsUser();
                 _User.PersonID = ctrlFindPerson1.PersonID;
                 _User.UserName = txtUserName.Text.Trim();
-                _User.Password = txtPassword.Text;
+                _User.Password = clsGlobal.ComputeHashing(txtPassword.Text);
                 _User.IsActive = chkIsActive.Checked;
 
                 if (_User.Save())
@@ -141,7 +141,7 @@ namespace DVLD
             else
             {
                 _User.UserName = txtUserName.Text.Trim();
-                _User.Password = txtPassword.Text;
+                _User.Password = clsGlobal.ComputeHashing(txtPassword.Text);
                 _User.IsActive = chkIsActive.Checked;
 
                 if (_User.Save())

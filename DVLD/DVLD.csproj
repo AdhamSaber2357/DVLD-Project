@@ -57,6 +57,12 @@
     <Compile Include="Applications\ApplicationsType\frmApplicationTypes.Designer.cs">
       <DependentUpon>frmApplicationTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applications\Manage Applications\frmLocalApplicationsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applications\Manage Applications\frmLocalApplicationsList.Designer.cs">
+      <DependentUpon>frmLocalApplicationsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Applications\TestTypes\frmManageTestTypes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,7 +82,6 @@
       <DependentUpon>frmUpdateTestType.cs</DependentUpon>
     </Compile>
     <Compile Include="clsGlobal.cs" />
-    <Compile Include="frmApplicationTypes.Designer.cs" />
     <Compile Include="Users\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +158,9 @@
     </Compile>
     <EmbeddedResource Include="Applications\ApplicationsType\frmApplicationTypes.resx">
       <DependentUpon>frmApplicationTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Applications\Manage Applications\frmLocalApplicationsList.resx">
+      <DependentUpon>frmLocalApplicationsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\TestTypes\frmManageTestTypes.resx">
       <DependentUpon>frmManageTestTypes.cs</DependentUpon>
@@ -234,6 +242,9 @@
       <Project>{b58420c1-f730-454c-959f-4550e14e58a2}</Project>
       <Name>DVLD_Business</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Applications\DrivingLicenseServices\NewDrivingLicense\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

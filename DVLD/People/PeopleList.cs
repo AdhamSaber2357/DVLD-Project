@@ -20,11 +20,6 @@ namespace DVLD
 
         }
 
-        void _RefreshWithFilter(string Attribute,string value)
-        {
-            dataGridView1.DataSource = clsPeople.GetPeopleWithFilter(Attribute,value);
-        }
-
         void _FillComboBoxFilter()
         {
             cbFilter.Items.Add("None");
@@ -40,7 +35,7 @@ namespace DVLD
             InitializeComponent();
             _Refresh();
             _FillComboBoxFilter();
-           
+            txtFilter.KeyPress += txtFilter_KeyPress;
         }
 
         private void PeopleList_Load(object sender, EventArgs e)
@@ -55,7 +50,41 @@ namespace DVLD
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            _RefreshWithFilter(cbFilter.SelectedItem.ToString(),txtFilter.Text);
+            if (cbFilter.SelectedItem == null || cbFilter.SelectedItem.ToString() == "None" ||
+                string.IsNullOrEmpty(txtFilter.Text))
+            {
+                _Refresh();
+                return;
+            }
+
+            string filterBy = cbFilter.SelectedItem.ToString();
+            DataGridViewColumn column = dataGridView1.Columns[filterBy];
+
+            if (column.ValueType == typeof(DateTime))
+                dataGridView1.DataSource = clsPeople.GetPeopleWithDateFilter(filterBy, txtFilter.Text);
+            else if (_IsSelectedColumnNumeric())
+                dataGridView1.DataSource = clsPeople.GetPeopleWithIntFilter(filterBy, txtFilter.Text);
+            else
+                dataGridView1.DataSource = clsPeople.GetPeopleWithStringFilter(filterBy, txtFilter.Text);
+
+            lbPeopleNumber.Text = dataGridView1.RowCount.ToString();
+        }
+
+        private bool _IsSelectedColumnNumeric()
+        {
+            if (cbFilter.SelectedItem == null || cbFilter.SelectedItem.ToString() == "None")
+                return false;
+
+            Type columnType = dataGridView1.Columns[cbFilter.SelectedItem.ToString()].ValueType;
+            return columnType == typeof(byte) || columnType == typeof(short) ||
+                   columnType == typeof(int) || columnType == typeof(long) ||
+                   columnType == typeof(decimal);
+        }
+
+        private void txtFilter_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (_IsSelectedColumnNumeric() && !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -117,10 +146,12 @@ namespace DVLD
 
         private void cbFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cbFilter.SelectedItem.ToString()=="None")
-                txtFilter.Visible = false;
-            else
-                txtFilter.Visible = true;
+            bool noFilter = cbFilter.SelectedItem.ToString() == "None";
+            txtFilter.Visible = !noFilter;
+            txtFilter.Clear();
+
+            if (noFilter)
+                _Refresh();
         }
     }
 }
