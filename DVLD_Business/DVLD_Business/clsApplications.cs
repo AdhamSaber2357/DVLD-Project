@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DVLD_Business;
 using DVLD_DataLayer;
 
 namespace DVLD_Bussiness
@@ -11,16 +12,18 @@ namespace DVLD_Bussiness
     public class clsLocalDrivingLicenseApplications
     {
         public enum enMode { Add, Update }
+        public enum enApplicationStatus { New = 1, Cancelled = 2, Completed = 3 }
         private enMode _Mode;
 
         public int? ApplicationID { get; set; }
         public int? ApplicantPersonID { get; set; }
         public DateTime ApplicationDate { get; set; }
         public int? ApplicationTypeID { get; set; }
-        public int? ApplicationStatus { get; set; }
+        public enApplicationStatus? ApplicationStatus { get; set; }
         public DateTime LastStatusDate { get; set; }
         public decimal PaidFees { get; set; }
         public int? CreatedByUserID { get; set; }
+        public clsPeople Person { get; set; }
 
         public clsLocalDrivingLicenseApplications()
         {
@@ -32,11 +35,12 @@ namespace DVLD_Bussiness
             LastStatusDate = DateTime.Now;
             PaidFees = 0;
             CreatedByUserID = null;
+            Person = null;
             _Mode = enMode.Add;
         }
 
         private clsLocalDrivingLicenseApplications(int? applicationID, int? applicantPersonID,
-            DateTime applicationDate, int? applicationTypeID, int? applicationStatus,
+            DateTime applicationDate, int? applicationTypeID, enApplicationStatus? applicationStatus,
             DateTime lastStatusDate, decimal paidFees, int? createdByUserID)
         {
             ApplicationID = applicationID;
@@ -47,6 +51,7 @@ namespace DVLD_Bussiness
             LastStatusDate = lastStatusDate;
             PaidFees = paidFees;
             CreatedByUserID = createdByUserID;
+            Person = clsPeople.Find(ApplicantPersonID);
             _Mode = enMode.Update;
         }
 
